@@ -392,7 +392,9 @@ body.is-locked{overflow:hidden}
     background:rgba(11,15,23,.94);backdrop-filter:blur(14px);border-top:1px solid var(--line-dark)
   }
   .actionbar .btn{width:100%;padding-inline:14px;font-size:15px}
-  body{padding-bottom:84px}
+  /* a folga da barra fixa sai do body (fundo branco, criava faixa clara)
+     e vai para o rodape, que ja e escuro e encosta na barra sem emenda */
+  body{padding-bottom:0}
 }
 
 /* --- Formulario de orcamento --- */
@@ -591,4 +593,16 @@ a.link-amber{color:var(--amber-ink);font-weight:600}
    acao); aqui a folga e so para o desktop. */
 @media (min-width:761px){
   .ft__bar .wrap{padding-bottom:72px}
+}
+
+/* ==========================================================================
+   28. Emenda entre rodape e barra de acao no mobile
+   O padding ficava no body, cujo fundo e branco: aparecia uma faixa clara
+   entre o rodape escuro e a barra fixa. A folga passa para o rodape, que se
+   estende por tras da barra. Paginas sem rodape (404, offline) deixam de
+   ganhar a folga, que la nao tinha barra nenhuma para justificar.
+   ========================================================================== */
+@media (max-width:760px){
+  .ft__bar .wrap{padding-bottom:calc(86px + env(safe-area-inset-bottom))}
+  .actionbar{background:#0B0F17;border-top:1px solid rgba(255,255,255,.12)}
 }
