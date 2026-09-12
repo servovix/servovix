@@ -2,7 +2,7 @@
    Objetivo: o site abrir mesmo sem conexão e carregar instantâneo em visitas
    repetidas, sem nunca servir HTML velho quando há rede. */
 
-const VERSAO = 'servovix-v4';
+const VERSAO = 'servovix-v5';
 const CACHE_SHELL = `${VERSAO}-shell`;
 const CACHE_ATIVOS = `${VERSAO}-ativos`;
 const CACHE_FONTES = `${VERSAO}-fontes`;
