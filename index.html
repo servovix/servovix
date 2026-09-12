@@ -49,7 +49,10 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["LocalBusiness", "Electrician"],
+      "@type": [
+        "LocalBusiness",
+        "Electrician"
+      ],
       "@id": "https://servovix.com.br/#business",
       "name": "ServoVIX",
       "alternateName": "ServoVIX Instalações e Manutenções",
@@ -73,7 +76,9 @@
         "telephone": "+55-27-99843-2920",
         "contactType": "customer service",
         "areaServed": "BR",
-        "availableLanguage": ["pt-BR"]
+        "availableLanguage": [
+          "pt-BR"
+        ]
       },
       "address": {
         "@type": "PostalAddress",
@@ -82,14 +87,34 @@
         "addressCountry": "BR"
       },
       "areaServed": [
-        { "@type": "City", "name": "Vitória" },
-        { "@type": "City", "name": "Vila Velha" },
-        { "@type": "City", "name": "Serra" },
-        { "@type": "City", "name": "Cariacica" },
-        { "@type": "City", "name": "Viana" },
-        { "@type": "City", "name": "Guarapari" }
+        {
+          "@type": "City",
+          "name": "Vitória"
+        },
+        {
+          "@type": "City",
+          "name": "Vila Velha"
+        },
+        {
+          "@type": "City",
+          "name": "Serra"
+        },
+        {
+          "@type": "City",
+          "name": "Cariacica"
+        },
+        {
+          "@type": "City",
+          "name": "Viana"
+        },
+        {
+          "@type": "City",
+          "name": "Guarapari"
+        }
       ],
-      "sameAs": ["https://www.instagram.com/servovix.servicos"],
+      "sameAs": [
+        "https://www.instagram.com/servovix.servicos"
+      ],
       "knowsAbout": [
         "Eletricista",
         "Instalação elétrica residencial",
@@ -110,10 +135,313 @@
         "@type": "OfferCatalog",
         "name": "Serviços ServoVIX",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalação e manutenção elétrica", "url": "https://servovix.com.br/eletrica.html" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Serralheria e estruturas metálicas", "url": "https://servovix.com.br/serralheria.html" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Segurança eletrônica", "url": "https://servovix.com.br/seguranca.html" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reformas e acabamentos", "url": "https://servovix.com.br/reformas.html" } }
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://servovix.com.br/eletrica.html#service",
+              "name": "Instalação e manutenção elétrica",
+              "serviceType": "Instalação e manutenção elétrica",
+              "url": "https://servovix.com.br/eletrica.html",
+              "provider": {
+                "@id": "https://servovix.com.br/#business"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Serviços de elétrica",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Quadros de distribuição"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Disjuntores e proteções"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Pontos de tomada e interruptores"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Iluminação"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Pontos para ar-condicionado"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Medição individual"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Diagnóstico de falhas"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Instalações industriais"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Manutenção preventiva"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Reformas elétricas"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://servovix.com.br/serralheria.html#service",
+              "name": "Serralheria e estruturas metálicas",
+              "serviceType": "Serralheria e estruturas metálicas",
+              "url": "https://servovix.com.br/serralheria.html",
+              "provider": {
+                "@id": "https://servovix.com.br/#business"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Serviços de serralheria",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Portões"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Grades e gradis"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Portas metálicas"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Corrimãos e guarda-corpos"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Estruturas e suportes"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Soldagem e reparos"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Ajuste e alinhamento"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Proteção anticorrosiva"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://servovix.com.br/seguranca.html#service",
+              "name": "Segurança eletrônica",
+              "serviceType": "Segurança eletrônica",
+              "url": "https://servovix.com.br/seguranca.html",
+              "provider": {
+                "@id": "https://servovix.com.br/#business"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Serviços de segurança eletrônica",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Câmeras e CFTV"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Alarmes"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Cerca elétrica"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Fechaduras digitais"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Fechaduras elétricas"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Automatizadores de portão"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Interfone e vídeo porteiro"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Manutenção de sistemas"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://servovix.com.br/reformas.html#service",
+              "name": "Reformas e acabamentos",
+              "serviceType": "Reformas e acabamentos",
+              "url": "https://servovix.com.br/reformas.html",
+              "provider": {
+                "@id": "https://servovix.com.br/#business"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Serviços de reformas e acabamentos",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Pintura interna e externa"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Massa corrida e preparo"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Reparos em alvenaria"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Pequenas reformas"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Revestimentos"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Manutenção predial"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Acabamento e limpeza"
+                    }
+                  }
+                ]
+              }
+            }
+          }
         ]
       }
     },
@@ -123,17 +451,61 @@
       "url": "https://servovix.com.br/",
       "name": "ServoVIX",
       "inLanguage": "pt-BR",
-      "publisher": { "@id": "https://servovix.com.br/#business" }
+      "publisher": {
+        "@id": "https://servovix.com.br/#business"
+      }
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "O orçamento tem custo?", "acceptedAnswer": { "@type": "Answer", "text": "A visita técnica custa de R$ 100 a R$ 150, conforme a localidade, e inclui o diagnóstico no local e a proposta detalhada do serviço. O valor é informado e combinado antes do agendamento." } },
-        { "@type": "Question", "name": "Qual é a região de atendimento?", "acceptedAnswer": { "@type": "Answer", "text": "Atendemos Vitória e a Grande Vitória: Vila Velha, Serra, Cariacica, Viana e região. Para outras localidades, consulte pelo WhatsApp." } },
-        { "@type": "Question", "name": "Atendem empresas e condomínios?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Executamos serviços residenciais, comerciais e industriais, incluindo manutenção predial e instalações em empresas e condomínios." } },
-        { "@type": "Question", "name": "Vocês fornecem o material?", "acceptedAnswer": { "@type": "Answer", "text": "Podemos fornecer o material ou trabalhar com o material do cliente. Os itens e valores ficam discriminados no orçamento antes do início do serviço." } },
-        { "@type": "Question", "name": "Em quanto tempo conseguem atender?", "acceptedAnswer": { "@type": "Answer", "text": "Depende da agenda e do tipo de serviço. Chame no WhatsApp descrevendo a necessidade que retornamos com a disponibilidade mais próxima." } },
-        { "@type": "Question", "name": "Como solicito um orçamento?", "acceptedAnswer": { "@type": "Answer", "text": "Pelo WhatsApp (27) 99843-2920. Descreva o serviço e, se possível, envie fotos do local — isso agiliza bastante a avaliação." } }
+        {
+          "@type": "Question",
+          "name": "O orçamento tem custo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A visita técnica custa de R$ 100 a R$ 150, conforme a localidade, e inclui o diagnóstico no local e a proposta detalhada do serviço. O valor é informado e combinado antes do agendamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual é a região de atendimento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atendemos Vitória e a Grande Vitória: Vila Velha, Serra, Cariacica, Viana e região. Para outras localidades, consulte pelo WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Atendem empresas e condomínios?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Executamos serviços residenciais, comerciais e industriais, incluindo manutenção predial e instalações em empresas e condomínios."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês fornecem o material?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Podemos fornecer o material ou trabalhar com o material do cliente. Os itens e valores ficam discriminados no orçamento antes do início do serviço."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Em quanto tempo conseguem atender?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende da agenda e do tipo de serviço. Chame no WhatsApp descrevendo a necessidade que retornamos com a disponibilidade mais próxima."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como solicito um orçamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pelo WhatsApp (27) 99843-2920. Descreva o serviço e, se possível, envie fotos do local — isso agiliza bastante a avaliação."
+          }
+        }
       ]
     }
   ]
