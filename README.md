@@ -134,3 +134,9 @@ informação real da empresa — não foram inventados:
 - [ ] **Fotos de serralheria e reformas** — hoje há apenas duas de cada frente.
 - [ ] **Confirmar a lista de serviços** de cada página e as cidades atendidas.
 - [ ] **Confirmar a política de garantia**, caso exista prazo definido.
+
+> **Verificar deploy pelo conteúdo, não pela API.** O endpoint
+> `repos/.../pages/builds/latest` é a API legada e continua apontando para um
+> commit anterior mesmo depois do deploy real. Confirme com um `curl` no
+> domínio buscando algo que só exista na versão nova. O CDN serve HTML com
+> `max-age=600`, então a propagação pode levar alguns minutos.
