@@ -571,3 +571,24 @@ a.link-amber{color:var(--amber-ink);font-weight:600}
   .topbar .wrap{padding-inline:14px;gap:8px}
   .topbar-l{gap:8px}
 }
+
+/* ==========================================================================
+   27. Credito do desenvolvedor
+   Formato conforme a referencia: marca em caixa alta, Arial, peso 800,
+   branca, com quadrado vermelho de 8px logo apos.
+   ========================================================================== */
+.credito{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.credito a{
+  display:inline-flex;align-items:center;gap:4px;
+  font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:-.025em;
+  color:#FFFFFF;text-decoration:none;transition:opacity .18s var(--ease)
+}
+.credito a:hover,.credito a:focus-visible{color:#FFFFFF;opacity:.82}
+.credito__marca{display:inline-block;width:8px;height:8px;background:#E63946;flex:none}
+
+/* O botao flutuante do WhatsApp fica fixo no canto e cobria a ultima linha do
+   rodape. No mobile isso ja estava resolvido pelo padding do body (barra de
+   acao); aqui a folga e so para o desktop. */
+@media (min-width:761px){
+  .ft__bar .wrap{padding-bottom:72px}
+}
