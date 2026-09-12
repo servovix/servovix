@@ -549,3 +549,25 @@ a.link-amber{color:var(--amber-ink);font-weight:600}
 .contact-list > a,.contact-list > span{display:flex;gap:14px;align-items:flex-start}
 .contact-list > a > span,.contact-list > span > span{display:block;min-width:0;background:none;border:0;padding:0;border-radius:0}
 .contact-list small{display:block;margin-top:2px}
+
+/* ==========================================================================
+   26. Barra superior: uma unica linha no mobile
+   O span da localizacao tinha display inline, que vencia o .hide-sm da media
+   query; a barra quebrava em duas linhas. Agora o texto encolhe em vez de
+   sumir, e a linha e travada com nowrap.
+   ========================================================================== */
+.topbar-local{display:inline-flex;align-items:center;gap:7px}
+
+@media (max-width:720px){
+  .topbar{font-size:12.6px}
+  .topbar .wrap{flex-wrap:nowrap;gap:10px;min-height:38px}
+  .topbar-l{flex-wrap:nowrap;gap:12px;width:100%;justify-content:space-between}
+  .topbar a,.topbar-local{white-space:nowrap}
+  .so-lg{display:none}          /* "Vitória e " sai; fica "Grande Vitória — ES" */
+}
+@media (max-width:370px){
+  .topbar{font-size:11.6px}
+  .topbar svg{width:13px;height:13px}
+  .topbar .wrap{padding-inline:14px;gap:8px}
+  .topbar-l{gap:8px}
+}

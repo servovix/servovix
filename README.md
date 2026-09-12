@@ -18,6 +18,8 @@ elétrica, serralheria, segurança eletrônica e reformas em Vitória e Grande V
 ├── seguranca.html          Serviço: segurança eletrônica
 ├── reformas.html           Serviço: reformas e acabamentos
 ├── 404.html                Página de erro (servida pelo GitHub Pages)
+├── offline.html            Página exibida quando não há conexão
+├── sw.js                   Service worker (cache e uso offline)
 │
 ├── assets/
 │   ├── css/servovix.css    Design system completo (sem framework)
@@ -51,7 +53,8 @@ elétrica, serralheria, segurança eletrônica e reformas em Vitória e Grande V
 | Imagens | `.webp` com fallback `.jpg`, `loading="lazy"`, `width`/`height` | Reduz peso e evita deslocamento de layout (CLS) |
 | Fontes | Google Fonts com `preconnect` + `display=swap` | Barlow Condensed (títulos) e Inter (texto) |
 | Formulário | Monta a mensagem e abre o WhatsApp | Site estático não tem backend; nenhum dado é armazenado |
-| JavaScript | Vanilla, sem dependências | ~4 KB, sem build |
+| JavaScript | Vanilla, sem dependências | ~5 KB, sem build |
+| PWA | Service worker próprio, sem biblioteca | HTML com rede primeiro (nunca serve conteúdo velho), estáticos com cache primeiro |
 
 ## Acessibilidade e SEO
 
@@ -61,6 +64,28 @@ elétrica, serralheria, segurança eletrônica e reformas em Vitória e Grande V
 - Open Graph e Twitter Card com imagem própria.
 - Dados estruturados JSON-LD: `LocalBusiness`/`Electrician`, `WebSite`, `Service`,
   `BreadcrumbList` e `FAQPage`.
+
+---
+
+## PWA (aplicativo instalável)
+
+O site pode ser instalado como aplicativo no celular e continua abrindo sem conexão.
+
+- `site.webmanifest` — nome, ícones (incluindo dois `maskable`, que o Android exige
+  para o ícone adaptativo não sair cortado), cor de tema e três atalhos de acesso rápido.
+- `sw.js` — service worker. Guarda o esqueleto do site na instalação e usa duas
+  estratégias: **rede primeiro** para HTML, de modo que o conteúdo nunca fique velho
+  quando há internet, e **cache primeiro** para CSS, JS, imagens e fontes, o que dá
+  carregamento instantâneo em visitas repetidas. Sem conexão, cai para a página já
+  salva ou para `offline.html`.
+- O registro do service worker fica em `assets/js/servovix.js`.
+
+> **Ao publicar mudanças, incremente `VERSAO` no topo do `sw.js`**
+> (`servovix-v1` → `servovix-v2`). É isso que descarta os caches antigos na ativação.
+> Sem incrementar, quem já visitou o site pode continuar vendo CSS ou imagens antigos.
+
+Service worker só funciona em HTTPS ou em `localhost`. Em produção o GitHub Pages
+já serve HTTPS no domínio próprio.
 
 ---
 

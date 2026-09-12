@@ -138,3 +138,24 @@
     window.open(url, "_blank", "noopener");
   });
 })();
+
+/* ServoVIX - registro do service worker (site utilizavel offline) */
+(function () {
+  "use strict";
+  if (!("serviceWorker" in navigator)) return;
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("/sw.js").then(function (reg) {
+      // se uma versao nova ficar esperando, assume assim que possivel
+      if (reg.waiting) reg.waiting.postMessage("pular-espera");
+      reg.addEventListener("updatefound", function () {
+        var novo = reg.installing;
+        if (!novo) return;
+        novo.addEventListener("statechange", function () {
+          if (novo.state === "installed" && navigator.serviceWorker.controller) {
+            novo.postMessage("pular-espera");
+          }
+        });
+      });
+    }).catch(function () { /* sem service worker o site segue normal */ });
+  });
+})();
