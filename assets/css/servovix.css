@@ -531,3 +531,21 @@ a.link-amber{color:var(--amber-ink);font-weight:600}
   .ft li a,.ft address a{padding-block:8px}
   .ft ul{gap:4px}
 }
+
+/* ==========================================================================
+   25. Aviso da politica de orcamento
+   ========================================================================== */
+.aviso-orcamento{
+  display:flex;gap:12px;align-items:flex-start;margin-top:22px;padding:16px 18px;
+  border-radius:var(--r);background:rgba(255,179,0,.10);border:1px solid rgba(255,179,0,.34);
+  font-size:14.4px;line-height:1.6;color:var(--inv-2);max-width:52ch;text-align:left
+}
+.aviso-orcamento svg{width:19px;height:19px;color:var(--amber);flex:none;margin-top:3px}
+.aviso-orcamento b{color:var(--inv);font-weight:700}
+
+/* --- Correcao: o seletor .contact-list span atingia tambem o span interno,
+   transformando-o em flex e colocando <b> e <small> lado a lado. Restringido
+   aos filhos diretos; o bloco de texto volta a empilhar. --- */
+.contact-list > a,.contact-list > span{display:flex;gap:14px;align-items:flex-start}
+.contact-list > a > span,.contact-list > span > span{display:block;min-width:0;background:none;border:0;padding:0;border-radius:0}
+.contact-list small{display:block;margin-top:2px}
