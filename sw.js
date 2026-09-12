@@ -2,7 +2,7 @@
    Objetivo: o site abrir mesmo sem conexão e carregar instantâneo em visitas
    repetidas, sem nunca servir HTML velho quando há rede. */
 
-const VERSAO = 'servovix-v3';
+const VERSAO = 'servovix-v4';
 const CACHE_SHELL = `${VERSAO}-shell`;
 const CACHE_ATIVOS = `${VERSAO}-ativos`;
 const CACHE_FONTES = `${VERSAO}-fontes`;
@@ -36,7 +36,12 @@ self.addEventListener('install', (evento) => {
   evento.waitUntil(
     caches.open(CACHE_SHELL)
       // addAll falha inteiro se um item falhar; adiciona um a um para ser tolerante
-      .then((cache) => Promise.allSettled(SHELL.map((u) => cache.add(u))))
+      // cache:'reload' ignora o cache HTTP do navegador. Sem isso, logo apos um
+      // deploy o precache grava a copia antiga (GitHub Pages serve max-age=600)
+      // e ela fica servida ate a proxima troca de VERSAO.
+      .then((cache) => Promise.allSettled(
+        SHELL.map((u) => cache.add(new Request(u, { cache: 'reload' })))
+      ))
       .then(() => self.skipWaiting())
   );
 });
@@ -72,7 +77,11 @@ async function redePrimeiro(req) {
 async function cachePrimeiro(req, nomeCache) {
   const cache = await caches.open(nomeCache);
   const guardado = await cache.match(req);
-  const rede = fetch(req)
+  // no-cache = revalida com o servidor (If-None-Match) em vez de aceitar a
+  // copia do cache HTTP; para outras origens mantem a requisicao original.
+  const mesmaOrigem = new URL(req.url).origin === self.location.origin;
+  const reqRede = mesmaOrigem ? new Request(req.url, { cache: 'no-cache' }) : req;
+  const rede = fetch(reqRede)
     .then((resposta) => {
       if (resposta && (resposta.ok || resposta.type === 'opaque')) cache.put(req, resposta.clone());
       return resposta;
