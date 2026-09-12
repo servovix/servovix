@@ -1,33 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://servovix.com.br/</loc>
     <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/profissional.jpg</image:loc>
+      <image:title>Profissional da ServoVIX com capacete de solda, mochila e ferramentas, a caminho de um atendimento</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/disjuntores.jpg</image:loc>
+      <image:title>Quadro de disjuntores instalado e organizado</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/portao.jpg</image:loc>
+      <image:title>Instalação de portão metálico com solda no local</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/camera.jpg</image:loc>
+      <image:title>Câmera de segurança instalada na parede externa de um imóvel</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/pintura.jpg</image:loc>
+      <image:title>Aplicação de pintura com rolo em parede interna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet1.jpg</image:loc>
+      <image:title>Quadro elétrico antigo com caixa corroída e fiação exposta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet2.jpg</image:loc>
+      <image:title>Quadro elétrico novo instalado, com disjuntores alinhados</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet7.jpg</image:loc>
+      <image:title>Disjuntores antigos com fiação desorganizada</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet8.jpg</image:loc>
+      <image:title>Quadro reorganizado com disjuntores novos e cabos alinhados</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet3.jpg</image:loc>
+      <image:title>Tomada danificada e queimada na parede</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet4.jpg</image:loc>
+      <image:title>Tomada nova instalada com espelho alinhado</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet5.jpg</image:loc>
+      <image:title>Tomada queimada em parede revestida de azulejo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet6.jpg</image:loc>
+      <image:title>Tomada nova instalada em parede de azulejo</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://servovix.com.br/eletrica.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet8.jpg</image:loc>
+      <image:title>Quadro de distribuição elétrica com disjuntores novos e cabos organizados</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet1.jpg</image:loc>
+      <image:title>Quadro elétrico antigo, com caixa corroída e fiação exposta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet2.jpg</image:loc>
+      <image:title>Quadro elétrico novo instalado, com disjuntores alinhados</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet7.jpg</image:loc>
+      <image:title>Disjuntores antigos com cabeamento desorganizado</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet3.jpg</image:loc>
+      <image:title>Tomada danificada e queimada na parede</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet4.jpg</image:loc>
+      <image:title>Tomada nova instalada, com espelho alinhado</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet5.jpg</image:loc>
+      <image:title>Tomada queimada em parede revestida de azulejo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet6.jpg</image:loc>
+      <image:title>Tomada nova instalada em parede de azulejo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet9.jpg</image:loc>
+      <image:title>Medidor de energia instalado para medição individual</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/elet/elet10.jpg</image:loc>
+      <image:title>Quadro de distribuição com circuitos para ar-condicionado</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/medidor.jpg</image:loc>
+      <image:title>Medidor de energia eletrônico em funcionamento</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/disjuntores.jpg</image:loc>
+      <image:title>Quadro com disjuntores organizados e identificados</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://servovix.com.br/seguranca.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/camera.jpg</image:loc>
+      <image:title>Câmera de segurança instalada na parte externa de um imóvel</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/fechadura2.jpg</image:loc>
+      <image:title>Fechadura digital com teclado numérico instalada em porta de madeira</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/fechadura1.jpg</image:loc>
+      <image:title>Fechadura elétrica instalada em portão metálico externo</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://servovix.com.br/serralheria.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://servovix.com.br/seguranca.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/portao.jpg</image:loc>
+      <image:title>Instalação de portão metálico, com soldagem feita no local</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/fechadura1.jpg</image:loc>
+      <image:title>Fechadura elétrica instalada em portão metálico</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://servovix.com.br/reformas.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/pintura.jpg</image:loc>
+      <image:title>Aplicação de tinta com rolo em parede interna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://servovix.com.br/img/parede.jpg</image:loc>
+      <image:title>Parede com massa aplicada e superfície preparada para pintura</image:title>
+    </image:image>
   </url>
 </urlset>

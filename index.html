@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ServoVIX | Elétrica, Serralheria, Segurança e Reformas em Vitória/ES</title>
-<meta name="description" content="Instalações e manutenções em Vitória e Grande Vitória: elétrica residencial e industrial, serralheria, segurança eletrônica (CFTV, alarmes, portões) e reformas. Orçamento gratuito no bairro de atuação. Fale pelo WhatsApp.">
+<title>Eletricista, Serralheria e Reformas em Vitória/ES | ServoVIX</title>
+<meta name="description" content="Eletricista, serralheria, segurança eletrônica e reformas em Vitória e Grande Vitória. Orçamento gratuito no bairro. Fale pelo WhatsApp.">
 <link rel="canonical" href="https://servovix.com.br/">
 <meta name="theme-color" content="#0B0F17">
 <meta name="author" content="ServoVIX">
@@ -14,17 +14,19 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="ServoVIX">
-<meta property="og:title" content="ServoVIX | Instalações e Manutenções em Vitória/ES">
-<meta property="og:description" content="Elétrica, serralheria, segurança eletrônica e reformas com execução técnica e acabamento profissional. Atendemos Vitória e Grande Vitória.">
+<meta property="og:title" content="Eletricista, Serralheria e Reformas em Vitória/ES | ServoVIX">
+<meta property="og:description" content="Eletricista, serralheria, segurança eletrônica e reformas em Vitória e Grande Vitória. Orçamento gratuito no bairro. Fale pelo WhatsApp.">
 <meta property="og:url" content="https://servovix.com.br/">
 <meta property="og:image" content="https://servovix.com.br/assets/brand/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="ServoVIX — Elétrica, Serralheria, Segurança e Reformas">
+<meta property="og:image:alt" content="Profissional da ServoVIX com ferramentas — elétrica, serralheria, segurança e reformas">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ServoVIX | Instalações e Manutenções em Vitória/ES">
-<meta name="twitter:description" content="Elétrica, serralheria, segurança eletrônica e reformas em Vitória e Grande Vitória.">
+<meta name="twitter:title" content="Eletricista, Serralheria e Reformas em Vitória/ES | ServoVIX">
+<meta name="twitter:description" content="Eletricista, serralheria, segurança eletrônica e reformas em Vitória e Grande Vitória. Orçamento gratuito no bairro.">
 <meta name="twitter:image" content="https://servovix.com.br/assets/brand/og-image.jpg">
+<meta name="geo.region" content="BR-ES">
+<meta name="geo.placename" content="Vitória, Espírito Santo">
 
 <!-- Ícones -->
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -38,6 +40,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="/assets/css/servovix.css">
 
+<!-- Imagem do hero é o maior elemento visível (LCP): pré-carregada para
+     encurtar o tempo até a primeira pintura significativa. -->
+<link rel="preload" as="image" href="/img/profissional.webp" type="image/webp" fetchpriority="high">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,11 +54,27 @@
       "name": "ServoVIX",
       "alternateName": "ServoVIX Instalações e Manutenções",
       "url": "https://servovix.com.br/",
-      "description": "Instalações e manutenções elétricas, serralheria, segurança eletrônica e reformas em Vitória e Grande Vitória, Espírito Santo.",
-      "logo": "https://servovix.com.br/assets/brand/servovix-mark.png",
-      "image": "https://servovix.com.br/assets/brand/og-image.jpg",
+      "description": "Eletricista, serralheria, segurança eletrônica e reformas em Vitória e Grande Vitória, Espírito Santo.",
+      "slogan": "Instalações e Manutenções",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://servovix.com.br/assets/brand/servovix-mark.png",
+        "width": 1024,
+        "height": 1024
+      },
+      "image": [
+        "https://servovix.com.br/assets/brand/og-image.jpg",
+        "https://servovix.com.br/img/profissional.jpg"
+      ],
       "telephone": "+55-27-99843-2920",
       "email": "servovix@gmail.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-27-99843-2920",
+        "contactType": "customer service",
+        "areaServed": "BR",
+        "availableLanguage": ["pt-BR"]
+      },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Vitória",
@@ -69,12 +91,20 @@
       ],
       "sameAs": ["https://www.instagram.com/servovix.servicos"],
       "knowsAbout": [
+        "Eletricista",
         "Instalação elétrica residencial",
         "Instalação elétrica industrial",
+        "Quadro de distribuição e disjuntores",
+        "Ponto de energia para ar-condicionado",
+        "Serralheiro",
         "Serralheria e estruturas metálicas",
+        "Portões, grades e corrimãos",
         "CFTV e câmeras de segurança",
-        "Portões automáticos",
-        "Reformas e pintura"
+        "Alarme e cerca elétrica",
+        "Fechadura digital e interfone",
+        "Portão automático",
+        "Pintor",
+        "Reformas e pintura predial"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -270,7 +300,7 @@
           </div>
           <div class="svc__body">
             <h3 class="h3">Instalação elétrica</h3>
-            <p>Da troca de uma tomada ao quadro de distribuição completo, em imóveis residenciais e instalações industriais.</p>
+            <p>Eletricista para o que você precisar: da troca de uma tomada ao quadro de distribuição completo, em imóveis residenciais e instalações industriais.</p>
             <ul class="tags">
               <li>Quadros e disjuntores</li><li>Pontos de tomada</li><li>Iluminação</li>
               <li>Ar-condicionado</li><li>Medição individual</li>
@@ -289,7 +319,7 @@
           </div>
           <div class="svc__body">
             <h3 class="h3">Serralheria</h3>
-            <p>Fabricação, soldagem e reparo de estruturas metálicas sob medida, com acabamento e proteção contra corrosão.</p>
+            <p>Serralheiro para fabricação, soldagem e reparo de estruturas metálicas sob medida, com acabamento e proteção contra corrosão.</p>
             <ul class="tags">
               <li>Portões</li><li>Grades e gradis</li><li>Portas metálicas</li>
               <li>Corrimãos</li><li>Soldagem e reparos</li>
@@ -327,7 +357,7 @@
           </div>
           <div class="svc__body">
             <h3 class="h3">Reformas e acabamentos</h3>
-            <p>Reformas completas ou reparos pontuais, com preparação de superfície e pintura de acabamento profissional.</p>
+            <p>Pintor e reformas: obra completa ou reparo pontual, com preparação de superfície e pintura de acabamento profissional.</p>
             <ul class="tags">
               <li>Pintura interna e externa</li><li>Massa e reboco</li>
               <li>Reparos em alvenaria</li><li>Manutenção predial</li>

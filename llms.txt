@@ -1,0 +1,30 @@
+# ServoVIX — Instalações e Manutenções
+
+> Empresa de serviços de elétrica, serralheria, segurança eletrônica e reformas
+> em Vitória e na Grande Vitória, Espírito Santo, Brasil. Atende imóveis
+> residenciais, comerciais e industriais.
+
+Contato: WhatsApp e telefone (27) 99843-2920 · servovix@gmail.com
+Região atendida: Vitória, Vila Velha, Serra, Cariacica, Viana e Guarapari (ES).
+
+Orçamento: gratuito no bairro onde a empresa atua. Nas demais localidades da
+Grande Vitória, a visita técnica custa de R$ 100 a R$ 150, combinada antes do
+agendamento. A proposta não obriga a contratar.
+
+## Serviços
+
+- [Instalação e manutenção elétrica](https://servovix.com.br/eletrica.html): eletricista para quadros de distribuição, disjuntores e proteções, pontos de tomada e interruptores, iluminação, circuito dedicado para ar-condicionado, medição individual de energia, diagnóstico de falhas, instalações industriais e manutenção preventiva.
+- [Serralheria e estruturas metálicas](https://servovix.com.br/serralheria.html): serralheiro para portões de correr, basculantes e sociais, grades e gradis, portas metálicas, corrimãos e guarda-corpos, estruturas e suportes, soldagem, ajuste de portões e proteção anticorrosiva. Peças sob medida.
+- [Segurança eletrônica](https://servovix.com.br/seguranca.html): instalação e configuração de câmeras e CFTV com acesso remoto pelo celular, alarmes, cerca elétrica, fechaduras digitais e elétricas, automatizadores de portão, interfone e vídeo porteiro, além de manutenção de sistemas já instalados.
+- [Reformas e acabamentos](https://servovix.com.br/reformas.html): pintor para pintura interna e externa, massa corrida e preparação de superfície, reparos em alvenaria, pequenas reformas, revestimentos e manutenção predial.
+
+## Páginas
+
+- [Início](https://servovix.com.br/): visão geral dos quatro serviços, trabalhos realizados com registros de antes e depois, depoimentos, área de atendimento, dúvidas frequentes e formulário de orçamento.
+
+## Observações
+
+- Site estático, sem coleta de dados: o formulário de orçamento monta uma
+  mensagem e a abre no WhatsApp do próprio visitante.
+- Os depoimentos exibidos são de clientes reais, publicados pela empresa. Não há
+  nota agregada nem avaliação de terceiros marcada no site.

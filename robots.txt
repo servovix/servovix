@@ -1,5 +1,36 @@
+# ServoVIX — https://servovix.com.br
+
 User-agent: *
 Allow: /
 Disallow: /_backup-original-*/
+
+# Rastreadores de IA: acesso liberado, para que o site possa ser citado em
+# respostas geradas (ChatGPT, Perplexity, Gemini, Claude e afins).
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
 
 Sitemap: https://servovix.com.br/sitemap.xml
