@@ -11,6 +11,7 @@
 
   --amber:#FFB300;    --amber-2:#FF8A00;   --amber-3:#FFC94A;
   --amber-soft:rgba(255,179,0,.12);
+  --amber-ink:#A85A00;   /* ambar escurecido: 5.09:1 sobre branco, mesmo matiz da marca */
   --wa:#25D366;       --wa-2:#1EBE5A;
 
   --txt:#0F172A;      --txt-2:#475569;     --txt-3:#64748B;
@@ -131,7 +132,7 @@ p{text-wrap:pretty}
 .hdr.is-stuck{background:rgba(11,15,23,.97);box-shadow:0 10px 30px -12px rgba(0,0,0,.6)}
 .hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:var(--hdr)}
 .brand{display:flex;align-items:center;gap:12px;flex:none}
-.brand img{height:42px;width:auto}
+.brand img{height:40px;width:auto}
 .nav{display:flex;align-items:center;gap:4px}
 .nav a{
   position:relative;padding:10px 14px;border-radius:var(--r-xs);color:var(--inv);
@@ -158,6 +159,7 @@ p{text-wrap:pretty}
     transform:translateX(100%);transition:transform .32s var(--ease);overflow-y:auto}
   .drawer[data-open="true"] .drawer__panel{transform:translateX(0)}
   .drawer__top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+  .drawer__top img{height:36px;width:auto}
   .drawer a.dlink{color:var(--inv);font-family:var(--fd);font-size:1.45rem;text-transform:uppercase;
     padding:13px 12px;border-radius:var(--r-xs);border-bottom:1px solid var(--line-dark);transition:.18s}
   .drawer a.dlink:hover{background:rgba(255,255,255,.06);color:var(--amber);padding-left:18px}
@@ -337,7 +339,7 @@ body.is-locked{overflow:hidden}
 @media (max-width:900px){.ft .wrap{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}}
 .ft h4{font-family:var(--fd);font-size:1.16rem;text-transform:uppercase;color:var(--inv);
   letter-spacing:.05em;margin-bottom:18px}
-.ft img.flogo{height:46px;width:auto;margin-bottom:16px}
+.ft img.flogo{height:72px;width:auto;margin-bottom:18px}
 .ft p{font-size:14.6px;line-height:1.7;max-width:34ch}
 .ft ul{display:grid;gap:11px}
 .ft li a,.ft address a{display:inline-flex;align-items:flex-start;gap:10px;transition:color .18s;font-style:normal}
@@ -471,4 +473,61 @@ body.is-locked{overflow:hidden}
 }
 @media (min-width:1000px) and (max-width:1180px){
   .g-3{grid-template-columns:repeat(3,1fr)}
+}
+
+/* --- Correcao: opcoes do <select> em fundo escuro ---
+   O popup nativo do sistema usa fundo claro e herdava a cor branca do select,
+   deixando as opcoes brancas sobre branco. Cores definidas explicitamente. */
+.field select option,
+.field select optgroup{
+  background-color:#FFFFFF;
+  color:#0F172A;
+  font-weight:500;
+}
+.field select option:disabled{color:#94A3B8}
+
+/* ==========================================================================
+   23. Contraste: ambar legivel sobre fundo claro (WCAG AA)
+   #FF8A00 sobre branco rende 2.36:1 e reprova para texto.
+   --amber-ink (#A85A00) rende 5.09:1 mantendo o matiz da marca.
+   Em fundo escuro o ambar vivo continua, pois ali ja passa com folga.
+   ========================================================================== */
+.eyebrow{color:var(--amber-ink)}
+.svc__link{color:var(--amber-ink)}
+.amber{color:var(--amber-ink)}
+.ac__btn:hover{color:var(--amber-ink)}
+.qform__note svg{color:var(--amber-ink)}
+.field .req{color:var(--amber-ink)}
+.scope svg{color:var(--amber-ink)}
+.feat__ico{color:var(--amber-ink)}
+.ac__ico{color:var(--amber-ink)}
+a.link-amber{color:var(--amber-ink);font-weight:600}
+
+/* em fundo escuro permanece o ambar vivo */
+.sec--dark .eyebrow,.cta .eyebrow,.hero .eyebrow{color:var(--amber)}
+.sec--dark .scope svg{color:var(--amber)}
+.sec--dark .feat__ico{color:var(--amber)}
+.sec--dark .qform__note svg,.cta .qform__note svg{color:var(--amber)}
+.sec--dark .field .req,.cta .field .req{color:var(--amber)}
+.sec--dark a.link-amber,.cta a.link-amber{color:var(--amber)}
+
+/* etiquetas Antes/Depois: 11.4px era pequeno demais */
+.ba__tag{font-size:12px}
+
+/* ==========================================================================
+   24. Alvos de toque
+   ========================================================================== */
+
+/* Card de servico inteiro clicavel: o link tinha so 25px de altura util.
+   Nao ha outro elemento interativo dentro do card, entao a sobreposicao
+   e segura e o texto continua selecionavel/legivel por leitor de tela. */
+.svc__link::after{content:"";position:absolute;inset:0;z-index:3}
+.svc:focus-within{border-color:var(--amber);box-shadow:var(--sh-2)}
+.svc__link:focus-visible{outline:none}
+.svc:focus-within{outline:3px solid var(--amber);outline-offset:3px}
+
+/* Links do rodape com area de toque confortavel no mobile */
+@media (max-width:760px){
+  .ft li a,.ft address a{padding-block:8px}
+  .ft ul{gap:4px}
 }
